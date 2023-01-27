@@ -75,8 +75,8 @@ export default function Home() {
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="mailto:oiarregoces@uniguajira.edu.co"> <AiOutlineMail /> </a>
-              <a href="https://www.linkedin.com/in/oscar-arregoces-b61921252" target="_blank"> <AiFillLinkedin /> </a>
-              <a href="https://github.com/OscarArregoces" target="_blank"> <AiFillGithub /> </a>
+              <a href="https://www.linkedin.com/in/oscar-arregoces-b61921252" target="_blank" rel="noreferrer"> <AiFillLinkedin /> </a>
+              <a href="https://github.com/OscarArregoces" target="_blank" rel="noreferrer"> <AiFillGithub /> </a>
               
               
             </div>
