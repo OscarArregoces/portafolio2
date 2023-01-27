@@ -1,8 +1,8 @@
 import Head from "next/head";
 import {
-  AiFillTwitterCircle,
+  AiOutlineMail,
   AiFillLinkedin,
-  AiFillYoutube,
+  AiFillGithub,
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
@@ -11,12 +11,26 @@ import code from "../public/code.png";
 import Educacion from "../public/Educacion.png";
 import Trabajo from "../public/Trabajo.png";
 import Image from "next/image";
-import Pokemon1 from "../public/Pokemon1.png";
-import Egresados1 from "../public/Egresados1.png";
-import Gimnasio1 from "../public/Gimnasio1.png";
-import Pokemon2 from "../public/Pokemon2.png";
-import Egresados2 from "../public/Egresados2.png";
-import Gimnasio3 from "../public/Gimnasio3.png";
+// import Pokemon1 from "../public/Pokemon1.png";
+// import Pokemon2 from "../public/Pokemon2.png";
+// import Pokemon3 from "../public/Pokemon3.png";
+// import Gimnasio1 from "../public/Gimnasio1.png";
+// import Gimnasio2 from "../public/Gimnasio2.png";
+// import Gimnasio3 from "../public/Gimnasio3.png";
+// import Egresados1 from "../public/Egresados1.png";
+// import Egresados2 from "../public/Egresados2.png";
+// import Egresados3 from "../public/Egresados3.png";
+
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-cards";
+
+// import required modules
+import { EffectCards } from "swiper";
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -60,9 +74,11 @@ export default function Home() {
               Hola! Tengo 23 años y soy desarrollador Web Full Stack orientado al FontEnd, soy creativo y me gusta aprender cosas nuevas todos los dias.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillTwitterCircle />
-              <AiFillLinkedin />
-              <AiFillYoutube />
+              <a href="mailto:oiarregoces@uniguajira.edu.co"> <AiOutlineMail /> </a>
+              <a href="https://www.linkedin.com/in/oscar-arregoces-b61921252" target="_blank"> <AiFillLinkedin /> </a>
+              <a href="https://github.com/OscarArregoces" target="_blank"> <AiFillGithub /> </a>
+              
+              
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={deved} layout="fill" objectFit="cover" />
@@ -73,7 +89,7 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Conocemé un poco</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              
+
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Estudié ingenieria de sistemas en la universidad de La Guajira durante 5 años y actualmente estoy en terminación academica, es decir que terminé academicamente y solo me falta graduarme. Durante mis años universitarios tambien he estudiado de manera autodidacta atraves de contenido virtual en diversas plataformas, entre ellas las mas importantes Udemy y YouTube, las cuales me han ayudado a formarme mejor.
@@ -120,7 +136,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Desarrollar aplicaciones orientadas al usuario y supervisar su eficacia.</p>
               <p className="text-gray-800 py-1">Comprender las necesidades de la empresa y trabajar con el personal pertinente para garantizar la máxima eficacia del software.</p>
               <p className="text-gray-800 py-1">Colaborar con los desarrolladores BackEnd para garantizar que el software funcione de acuerdo con lo definido</p>
-              <p className="text-gray-800 py-1">Cambiar el diseño y el contenido de las páginas existentes en beneficio de los usuarios, clientes y compañeros.</p>               
+              <p className="text-gray-800 py-1">Cambiar el diseño y el contenido de las páginas existentes en beneficio de los usuarios, clientes y compañeros.</p>
             </div>
           </div>
         </section>
@@ -129,7 +145,147 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white ">Projectos</h3>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
+
+            <Swiper
+              effect={"cards"}
+              grabCursor={true}
+              modules={[EffectCards]}
+              className="mySwiper"
+            >
+              <SwiperSlide> <div className="Pokemon1"></div> </SwiperSlide>
+              <SwiperSlide> <div className="Pokemon2"></div> </SwiperSlide>
+              <SwiperSlide>  <div className="Pokemon3"></div> </SwiperSlide>
+            </Swiper>
+
+            <Swiper
+              effect={"cards"}
+              grabCursor={true}
+              modules={[EffectCards]}
+              className="mySwiper"
+            >
+              <SwiperSlide> <div className="Gimnasio1"></div> </SwiperSlide>
+              <SwiperSlide> <div className="Gimnasio2"></div> </SwiperSlide>
+              <SwiperSlide> <div className="Gimnasio3"></div> </SwiperSlide>
+            </Swiper>
+
+            <Swiper
+              effect={"cards"}
+              grabCursor={true}
+              modules={[EffectCards]}
+              className="mySwiper"
+            >
+              <SwiperSlide> <div className="Egresado1"></div> </SwiperSlide>
+              <SwiperSlide> <div className="Egresado2"></div> </SwiperSlide>
+              <SwiperSlide> <div className="Egresado3"></div> </SwiperSlide>
+            </Swiper>
+            {/* <Swiper
+              spaceBetween={30}
+              effect={"fade"}
+              navigation={true}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[EffectFade, Navigation, Pagination]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <Image
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={Pokemon1}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={Pokemon2}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={Pokemon3}
+                />
+              </SwiperSlide>
+            </Swiper>
+
+            <Swiper
+              spaceBetween={30}
+              effect={"fade"}
+              navigation={true}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[EffectFade, Navigation, Pagination]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <Image
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={Gimnasio1}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={Gimnasio2}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={Gimnasio3}
+                />
+              </SwiperSlide>
+            </Swiper>
+
+            <Swiper
+              spaceBetween={30}
+              effect={"fade"}
+              navigation={true}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[EffectFade, Navigation, Pagination]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <Image
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={Egresados1}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={Egresados2}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={Egresados3}
+                />
+              </SwiperSlide>
+            </Swiper> */}
+            {/* <div className="basis-1/3 flex-1 ">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -182,7 +338,7 @@ export default function Home() {
                 layout="responsive"
                 src={Egresados2}
               />
-            </div>
+            </div> */}
           </div>
         </section>
       </main>
