@@ -30,6 +30,10 @@ a {
   align-items: center;
 }
 
+.contenedor-swiper h3{
+  color: white;
+  text-align: center;
+}
 .swiper {
   /* width: 240px;
   height: 320px; */
@@ -121,5 +125,16 @@ background-size: contain;
   .swiper {  
     width: 260px;
     height: 160px;
+  }
+}
+
+
+#ul{
+  list-style-type: disc;
+}
+
+@media (max-width:520px) {
+  .perfil {
+    width: 100%;
   }
 }
