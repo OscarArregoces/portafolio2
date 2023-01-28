@@ -176,7 +176,7 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Projectos</h3>
+            <h3 className="text-3xl py-1 dark:text-white ">Proyectos</h3>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
 
