@@ -12,15 +12,6 @@ import Trabajo from "../public/Trabajo.png";
 import Perfil from "../public/Perfil.png";
 import Image from "next/image";
 import CV from '../public/CV.jpg'
-// import Pokemon1 from "../public/Pokemon1.png";
-// import Pokemon2 from "../public/Pokemon2.png";
-// import Pokemon3 from "../public/Pokemon3.png";
-// import Gimnasio1 from "../public/Gimnasio1.png";
-// import Gimnasio2 from "../public/Gimnasio2.png";
-// import Gimnasio3 from "../public/Gimnasio3.png";
-// import Egresados1 from "../public/Egresados1.png";
-// import Egresados2 from "../public/Egresados2.png";
-// import Egresados3 from "../public/Egresados3.png";
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -51,14 +42,14 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
+                  className="cursor-pointer text-2xl"
                 />
               </li>
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  download="CV - Oscar Arregoces"
-                  href={CV}
+                  download="CV -  Oscar Arregoces"
+                  href='/CV.pdf'
                 >
                   
                   Descargar CV
