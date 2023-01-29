@@ -47,7 +47,8 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                  // className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="bg-red-800 text-white px-4 py-2 border-none rounded-md ml-8"
                   download="CV -  Oscar Arregoces"
                   href='/CV.pdf'
                 >
@@ -58,7 +59,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10 py-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+            <h2 className="text-5xl py-2 text-red-800 font-medium dark:text-red-600 md:text-6xl">
               Oscar Arregoces
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
@@ -81,7 +82,7 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Conocemé un poco</h3>
+            <h3 className="text-3xl py-1 text-red-800 dark:text-red-600 ">Conocemé un poco</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
 
             </p>
@@ -91,11 +92,11 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
+              <h3 className="text-lg font-medium pt-8 pb-2 text-red-800 ">
                 Educación
               </h3>
               <Image src={Educacion} width={100} height={100} />
-              <p className="py-2 text-teal-600 text-lg ">
+              <p className="py-2 text-red-800 text-lg ">
                 Ingenierio de sistemas en la Universidad de La Guajira en terminación acadedmica.
               </p>
               <p className="text-gray-800 py-1">Cursos:</p>
@@ -113,11 +114,11 @@ export default function Home() {
               <p className="text-gray-800 py-1">Udemy - Master en JavaScript: Aprender JS, jQuery, Angular, NodeJS</p> */}
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
+              <h3 className="text-lg font-medium pt-8 pb-2 text-red-800">
                 Habilidades
               </h3>
               <Image src={Tecnologia} width={100} height={100} />
-              <p className="py-2 text-teal-600 text-lg ">
+              <p className="py-2 text-red-800 text-lg text-red-800">
                 Tecnologias:
               </p>
               <ul id="ul">
@@ -130,7 +131,7 @@ export default function Home() {
                 <li className="text-gray-800 py-1">Redux</li>
               </ul>
 
-              <p className="py-2 text-teal-600 text-lg ">
+              <p className="py-2 text-red-800 text-lg text-red-800">
                 Capacidades:
               </p>
               <ul id="ul">
@@ -149,9 +150,9 @@ export default function Home() {
               <p className="text-gray-800 py-1">MySql</p> */}
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Experiencia</h3>
+              <h3 className="text-lg font-medium pt-8 pb-2 text-red-800">Experiencia</h3>
               <Image src={Trabajo} width={100} height={100} />
-              <p className="py-2 text-teal-600 text-lg ">
+              <p className="py-2 text-red-800 text-lg text-red-800">
                 Sistema Web responsivo para el seguimiento de los graduados en la Universidad de La Guajira.
               </p>
               <p className="text-gray-800 py-1">Tareas:</p>
@@ -167,7 +168,7 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Proyectos</h3>
+            <h3 className="text-3xl py-1 text-red-800 dark:text-red-600 ">Proyectos</h3>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
 
