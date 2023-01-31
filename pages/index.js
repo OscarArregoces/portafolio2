@@ -97,7 +97,7 @@ export default function Home() {
               </h3>
               <Image src={Educacion} width={100} height={100} />
               <p className="py-2 text-red-800 text-lg ">
-                Ingenierio de sistemas en la Universidad de La Guajira en terminación acadedmica.
+                Ingenierio de sistemas en la Universidad de La Guajira en terminación academica.
               </p>
               <p className="text-gray-800 py-1">Cursos:</p>
               <ul id="ul">
